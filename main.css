@@ -1,0 +1,192 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html, body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+.text {
+    font-size: 20px;
+}
+.sortWrapper {
+    display: flex;
+    width: 50%;
+}
+.sort {
+    width: 45%;
+}
+.sortInput {
+    width: 75%;
+}
+.sortSearch {
+    margin-left: 1%;
+    padding: 5px 10px;
+    width: 20%;
+}
+.sortAdd {
+    margin-left: auto;
+    padding: 5px 10px;
+}
+.table {
+    border: 3px solid black;
+    margin-top: 1%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 2fr;
+    border-top: 1px solid black;
+}
+
+.name {
+    grid-column: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    border-right: 1px solid black;
+}
+
+.nameItem {
+    padding: 0 1%;
+}
+
+.price {
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: space-between;
+    border-right: 1px solid black;
+}
+
+.actions {
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.columnName {
+    width: 90%;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.productName {
+    color: black;
+}
+
+.circle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+	background: red;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.btnSort {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.triangle {
+    width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid red;
+}
+
+.triangleDown {
+    transform: rotateZ(180deg);
+}
+
+.operation {
+    width: 40%;
+}
+
+.createProduct {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+    width: 50%;
+}
+.option {
+    display: flex;
+    flex-direction: column;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.Add {
+    height: 50%;
+    width: 15%;
+    align-self: end;
+}
+
+.modalWrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding:30px 0;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 20%;
+    border-radius: 10px;
+    padding-bottom: 1%;
+}
+
+.answer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.modalButton {
+    padding: 6px 15px;
+}
+
+/*# sourceMappingURL=main.css.map*/
