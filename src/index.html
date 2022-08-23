@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Epam</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sortWrapper">
+        <div class="sort">
+          <input
+            class="sortInput text"
+            type="text"
+            placeholder="Фильтр поиска товара по имени"
+            id="inputSearch"
+          />
+          <button class="sortSearch text" id="search">Search</button>
+        </div>
+      </div>
+      <div class="table">
+        <div class="row">
+          <div class="name">
+            <p class="columnName text">Name</p>
+            <button class="btnSort"><span class="triangle" id="btnSortName"></span></button>
+          </div>
+          <div class="price">
+            <p class="columnName text">Price</p>
+            <button class="btnSort"><span class="triangle" id="btnSortPrice"></span></button>
+          </div>
+          <div class="actions"><p class="columnName text">Actions</p></div>
+        </div>
+      </div>
+      <div class="createProduct">
+        <div class="nameProduct option">
+          <p class="text">Name: ◉ Required field</p>
+          <input type="text" class="text" id="nameOption"/>
+          <span class="error hidden text" id="nameError">Поле заполнено не верно!</span>
+        </div>
+        <div class="countProduct option">
+          <p class="text">Count:</p>
+          <input type="text" class="text" id="countOption"/>
+          <span class="error hidden text" id="countError">Поле заполнено не верно!</span>
+        </div>
+        <div class="priceProduct option">
+          <p class="text">Price:</p>
+          <input type="text" class="text" id="priceOption"/>
+          <span class="error hidden text" id="priceError">Поле заполнено не верно!</span>
+        </div>
+        <button class="Add text" id="add">Add</button>
+      </div>
+      <div class="hidden" id="modalWrapper">
+        <div class="modal" id="modal">
+          <p class="text">Вы уверены?</p>
+          <div class="answer">
+            <button class="text modalButton">Да</button>
+            <button class="text modalButton">Нет</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
